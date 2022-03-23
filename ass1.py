@@ -1,0 +1,32 @@
+from app import db, Company, User
+
+db.create_all()
+
+# c1 = Company('Toyota', 'Chennai')
+# c2 = Company('TCS', 'Bangalore')
+# c3 = Company('Saturam', 'Bangalore')
+# c4 = Company('Skoda', 'Czech')
+# c5 = Company('Volkswagen', 'Paris')
+# db.session.add(c1)
+# db.session.add(c2)
+# db.session.add(c3)
+# db.session.add(c4)
+# db.session.add(c5)
+# db.session.commit()
+# print(Company.query.get(11).company_name)
+# print(Company.query.all())
+
+# u1 = User('Aravind', 2, '12-12-12')
+# u2 = User('Ramasamy', 2, '01-12-12')
+# u3 = User('Aadharsh', 2, '12-03-12')
+# u4 = User('Kanithan', 2, '14-08-12')
+# u5 = User('Pamaran', 2, '26-06-12')
+#
+# db.session.add(u1)
+# db.session.add(u2)
+# db.session.add(u3)
+# db.session.add(u4)
+# db.session.add(u5)
+# db.session.commit()
+# print(User.query.get(2).user_name)
+print(User.query.all())
